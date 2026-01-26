@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' );
+
+:root{
+    --Azul-acero: #2C3E50;
+    --Verde-seguridad: #27AE60;
+    --Gris-suave: #ECF0F1;
+    --Gris-grafito: #7F8C8D;
+    --Amarillo-advertencia: #F1C40F;
+    --Blanco-puro: #FFFFFF;
+    --Rojo-error: #EB5757;
+    --text-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.icono{
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    transition: fill 0.3s ease;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--Gris-suave);
+    color: var(--text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+}h1, h2, h3{
+    color: var(--Azul-acero);
+    margin-bottom: 15px;
+  
+}
+
+.barra-navegacion{
+    background-color: var(--Azul-acero);
+    color: var(--Blanco-puro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.logo{
+    color: var(--Verde-seguridad);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+}
+
+.menu-navegacion{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+
+.menu-navegacion li a{
+    color: var(--Verde-seguridad);
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.3s ease;
+
+}
+
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://pandorafms.com/blog/wp-content/uploads/2018/05/mantenimiento-informatico-pfms-blog.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center
+  
+
+}
+
+header h1{
+    color: var(--Blanco-puro);
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+header p{
+    color: var(--Blanco-puro);
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.contenedor-pagina{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main{
+    padding: 80px 20px 40px 20px;
+
+
+}
+
+section{
+    margin-bottom: 60px;
+    border-bottom: var(--Verde-seguridad) 2px solid;
+
+}
+
+.grid-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.texto-bloque p{
+    margin-bottom: 15px;
+
+}
+.contenido-imagen img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+
+}
+
+.contenido-imagen img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(104, 224, 13, 0.747);
+
+}
+
+.ejemplo-mantenimiento{
+    background-color: var(--Blanco-puro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(96, 205, 7, 0.1);
+
+
+}
+.ejemplo-mantenimiento img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+
+footer{
+
+    background-color: var(--Azul-acero);
+    color: var(--Blanco-puro);
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px 0;
+    margin-top: 40px;
+
+
+
+    
+
+
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+
+}
+footer a{
+    color: var(--Verde-seguridad);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+}
+footer a:hover{
+    color: var(--Amarillo-advertencia);
+
+}
+
+
+
