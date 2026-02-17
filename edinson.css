@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
-   
+
     --color-primario: #000000;
-    
+
     --color-secundario: #00ff41;
-    
+
     --color-fondo: #0a0a0a;
-    
+
     --color-acento: #008f11;
-    
+
     --color-texto: #e0e0e0;
-    
+
     --color-texto-suave: #a0a0a0;
-    
+
     --color-blanco: #ffffff;
     --color-vidrio: rgba(0, 0, 0, 0.85);
     --sombra-premium: 0 0 20px rgba(0, 255, 65, 0.2);
@@ -29,6 +29,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     background-color: var(--color-fondo);
@@ -99,6 +100,36 @@ h4 {
     background-color: rgba(0, 255, 65, 0.1);
     color: var(--color-secundario);
     box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.2);
+}
+
+
+.nombre-seccion {
+    position: absolute;
+    top: 55px;
+    background: var(--color-vidrio);
+    color: var(--color-secundario);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    border: 1px solid var(--color-acento);
+    opacity: 0;
+    transition: var(--transicion-suave);
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: var(--sombra-premium);
+}
+
+.menu-navegacion li a:hover .nombre-seccion {
+    opacity: 1;
+    top: 45px;
+    /* Pequeño efecto de subida */
+}
+
+.menu-navegacion li a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -310,7 +341,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: 1px solid rgba(0, 255, 65, 0.1);
+    border: 1px solid rgba(6, 204, 55, 0.1);
 }
 
 .enlaces-footer a:hover {
